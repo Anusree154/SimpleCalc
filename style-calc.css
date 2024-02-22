@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.formstyle{
+    width: 300px;
+   height: 400px;
+    background-color: gray;
+    margin: 50px auto;
+    padding:30px 20px;
+    display: grid;
+    text-align: center;
+    border: 3px solid skyblue;  
+
+}
+.text-box{
+    height: 20px;
+}
+.text-box label{
+    font-weight:bold;
+    font-size: 30px;
+    color: white;
+   
+}
+.text-box input{
+   height: 30px;
+    width: 223px;  
+    margin: 15px; 
+    font-size: 25px;  
+    padding: 15px;  
+    background-color: lightgreen;  
+}
+.text-box input:hover{
+    background-color: green;
+}
+.button-box{
+    margin:0px auto;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    justify-content: space-between;
+   
+}
+/* .button-box btn{
+    padding: 5px 5px; 
+    margin: 5px 0px;
+} */
