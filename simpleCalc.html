@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simpleCalculator1</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+   <div class="formstyle">
+    <label id="firstnumber">Enter the first number: </label>
+    <input type="text" id="firstText">
+    <br><br>
+    <label id="operator">Enter the operator: </label>
+    <input type="text" id="operatorInput">
+    <br><br>
+    <label id="Secondnumber">Enter the second number: </label>
+    <input type="text" id="secondText">
+   <br><br>
+    <button id="buttonElem" >Submit</button>
+    <br> <br>
+    <label id="result">Result </label>
+</div>
+    <script>
+        let n1,n2,operator,result;
+         document.getElementById('buttonElem').onclick = function(){
+            n1 = document.getElementById('firstText').value;
+            n1=parseFloat(n1);
+            operator= document.getElementById('operatorInput').value;
+            n2 = document.getElementById('secondText').value;
+            n2=parseFloat(n2);
+            if(operator === '+'){
+                result = n1+n2;
+            }else if(operator === '-'){
+                result = n1-n2 ; 
+            }else if(operator === '*'){
+                result = n1*n2 ; 
+            }else{
+                result = n1/n2;
+            }
+            document.getElementById('result').innerHTML = 'Result : '+result ;
+         }
+       
+    </script>
+</body>
+</html>
+
+
+
+
